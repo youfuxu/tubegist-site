@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TubeGist Privacy Policy 隱私權政策</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #16171a;
+    --muted: #5b5f66;
+    --border: #e4e4e7;
+    --accent: #e53935;
+    --panel: #f7f7f8;
+    --link: #065fd4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f10;
+      --fg: #f1f1f1;
+      --muted: #a8adb5;
+      --border: #2a2c30;
+      --accent: #ff5c5c;
+      --panel: #1a1b1e;
+      --link: #6fb1ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  body {
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", Roboto, Arial, sans-serif;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header.top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  header.top .logo {
+    color: var(--accent);
+    font-size: 22px;
+  }
+  header.top .name {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 36px;
+  }
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px;
+    margin-bottom: 30px;
+    background: var(--panel);
+  }
+  .lang-toggle button {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    color: var(--muted);
+    padding: 7px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .lang-toggle button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 4px;
+  }
+  h2 {
+    font-size: 19px;
+    margin: 34px 0 10px;
+  }
+  p { margin: 10px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .muted { color: var(--muted); }
+  a { color: var(--link); }
+  .summary-box {
+    border: 1px solid var(--border);
+    background: var(--panel);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 24px 0 8px;
+  }
+  .summary-box h3 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  .summary-box ul { margin: 0; padding-left: 20px; }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  code {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 1px 6px;
+    font-size: 0.92em;
+  }
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="logo">&#9654;</span>
+    <span class="name">TubeGist</span>
+  </header>
+  <p class="updated">Last updated / 最後更新：2026-07-07</p>
+
+  <div class="lang-toggle" role="tablist">
+    <button type="button" class="active" data-lang="zh" onclick="setLang('zh')">繁體中文</button>
+    <button type="button" data-lang="en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ===================== Traditional Chinese ===================== -->
+  <div class="lang-block active" id="lang-zh">
+    <h1>隱私權政策</h1>
+    <p class="muted">適用於 Chrome 擴充功能「TubeGist — YouTube Summary Sidebar」</p>
+
+    <div class="summary-box">
+      <h3>一句話總結</h3>
+      <ul>
+        <li>不蒐集任何個人資料，也沒有伺服器可以蒐集。</li>
+        <li>你的 Anthropic API 金鑰只存在你自己的瀏覽器裡。</li>
+        <li>影片文字稿只會傳送給 Anthropic（你自己設定的 API），不會傳給我們或任何第三方。</li>
+        <li>沒有帳號、沒有登入、沒有使用行為追蹤、沒有分析工具。</li>
+      </ul>
+    </div>
+
+    <h2>我們是誰</h2>
+    <p>TubeGist 是一個 Chrome 擴充功能，會在 YouTube 影片頁面加入一個側邊欄，讀取該影片的文字稿並整理成摘要，附上可點擊跳轉的時間戳記。</p>
+
+    <h2>我們不會蒐集什麼</h2>
+    <p>TubeGist 不會蒐集、儲存、出售或傳輸任何使用者個人資料給開發者或任何第三方（Anthropic 除外，且僅限你主動觸發摘要時）。具體來說：</p>
+    <ul>
+      <li>我們沒有後端伺服器。TubeGist 完全在你的瀏覽器本機端執行。</li>
+      <li>我們不會建立使用者帳號，也不需要登入。</li>
+      <li>我們不會安裝任何分析或追蹤工具（沒有 Google Analytics、沒有像素、沒有遙測）。</li>
+      <li>我們看不到你摘要過哪些影片、你的文字稿內容，或你的 API 金鑰。</li>
+    </ul>
+
+    <h2>你的 API 金鑰如何處理</h2>
+    <p>TubeGist 採「自備金鑰」（Bring Your Own API Key）模式：</p>
+    <ul>
+      <li>你的 Anthropic API 金鑰只會儲存在瀏覽器本機儲存空間（<code>chrome.storage.local</code>），不會同步到雲端，也不會傳送到我們手上。</li>
+      <li>金鑰唯一會被使用的時機，是當你在 TubeGist 側邊欄按下「Summarize」時，由你的瀏覽器直接呼叫 Anthropic 的 API 端點（<code>api.anthropic.com</code>），使用你自己的金鑰付費。</li>
+      <li>移除擴充功能或清除瀏覽器資料，即可完全刪除本機儲存的金鑰。</li>
+    </ul>
+
+    <h2>影片文字稿與摘要內容如何處理</h2>
+    <ul>
+      <li>當你按下摘要按鈕，TubeGist 會讀取目前 YouTube 分頁提供的字幕/文字稿，連同你設定的語言偏好，直接從你的瀏覽器傳送給 Anthropic 的 Claude API 產生摘要。</li>
+      <li>這些內容不會先經過我們的伺服器（因為我們沒有伺服器），也不會被我們保存、記錄或用於任何其他用途。</li>
+      <li>該次請求會受 <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic 的隱私權政策</a>規範，因為你是直接與 Anthropic 的 API 互動。</li>
+    </ul>
+
+    <h2>我們使用的權限</h2>
+    <ul>
+      <li><strong>storage</strong>：在本機儲存你的 API 金鑰與偏好設定（語言、模型選擇等）。</li>
+      <li><strong>activeTab / scripting / tabs</strong>：讀取目前 YouTube 分頁的文字稿，並在你點擊時間戳記時控制影片播放進度跳轉。</li>
+      <li><strong>sidePanel</strong>：在瀏覽器側邊顯示摘要介面。</li>
+      <li><strong>host permission（youtube.com）</strong>：讀取影片文字稿。</li>
+      <li><strong>host permission（api.anthropic.com）</strong>：使用你自己的金鑰呼叫 Claude API 產生摘要。</li>
+      <li><strong>host permission（api.gumroad.com）</strong>：只在你於設定頁輸入授權金鑰並按下啟用時，向 Gumroad 驗證該金鑰是否有效。</li>
+    </ul>
+
+    <h2>付費與授權</h2>
+    <p>TubeGist 提供每日 3 次免費摘要額度；如需解鎖無限次數，採用單次付費（非訂閱制）。金流由 Gumroad 處理（有其<a href="https://gumroad.com/privacy" target="_blank" rel="noopener">獨立的隱私權政策</a>）。當你啟用授權時，你輸入的授權金鑰會傳送至 Gumroad 的驗證端點（<code>api.gumroad.com</code>）確認有效性；驗證結果只儲存在你的瀏覽器本機，我們不會收到任何資料。</p>
+
+    <h2>兒童隱私</h2>
+    <p>TubeGist 並非設計給兒童使用，也不會刻意蒐集兒童的個人資料。</p>
+
+    <h2>政策異動</h2>
+    <p>若本政策有重大變更，我們會更新此頁面頂端的「最後更新」日期。建議你在使用擴充功能前，先確認此頁面內容。</p>
+
+    <h2>聯絡我們</h2>
+    <p>若你對本隱私權政策有任何問題，歡迎透過以下方式聯絡：<a href="mailto:joe303262000@hotmail.com">joe303262000@hotmail.com</a></p>
+  </div>
+
+  <!-- ===================== English ===================== -->
+  <div class="lang-block" id="lang-en">
+    <h1>Privacy Policy</h1>
+    <p class="muted">For the Chrome extension "TubeGist — YouTube Summary Sidebar"</p>
+
+    <div class="summary-box">
+      <h3>TL;DR</h3>
+      <ul>
+        <li>We don't collect any personal data — we don't even have a server to collect it on.</li>
+        <li>Your Anthropic API key stays on your own device.</li>
+        <li>Video transcripts are sent only to Anthropic (using your own API key), never to us or any other third party.</li>
+        <li>No accounts, no login, no behavioral tracking, no analytics.</li>
+      </ul>
+    </div>
+
+    <h2>Who we are</h2>
+    <p>TubeGist is a Chrome extension that adds a side panel to YouTube video pages. It reads the video's transcript and turns it into a summary with clickable, jump-to timestamps.</p>
+
+    <h2>What we don't collect</h2>
+    <p>TubeGist does not collect, store, sell, or transfer any personal data to the developer or any third party, other than Anthropic (and only when you actively trigger a summary). Specifically:</p>
+    <ul>
+      <li>We run no backend servers. TubeGist executes entirely on your local browser.</li>
+      <li>We don't create user accounts and don't require login.</li>
+      <li>We don't run any analytics or tracking (no Google Analytics, no pixels, no telemetry).</li>
+      <li>We cannot see which videos you've summarized, your transcript content, or your API key.</li>
+    </ul>
+
+    <h2>How your API key is handled</h2>
+    <p>TubeGist is a "Bring Your Own API Key" product:</p>
+    <ul>
+      <li>Your Anthropic API key is stored only in local browser storage (<code>chrome.storage.local</code>). It is not synced to any cloud service and never reaches us.</li>
+      <li>The key is used only at the moment you click "Summarize" in the TubeGist panel — your browser calls Anthropic's API endpoint (<code>api.anthropic.com</code>) directly, billed to your own Anthropic account.</li>
+      <li>Uninstalling the extension or clearing browser data permanently deletes the locally stored key.</li>
+    </ul>
+
+    <h2>How transcripts and summaries are handled</h2>
+    <ul>
+      <li>When you click Summarize, TubeGist reads the captions/transcript already available on the current YouTube tab, along with your language preference, and sends it directly from your browser to Anthropic's Claude API to generate the summary.</li>
+      <li>This content never passes through any server of ours (we don't operate one), and is never stored, logged, or used by us for any other purpose.</li>
+      <li>That request is governed by <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>, since you are interacting directly with Anthropic's API.</li>
+    </ul>
+
+    <h2>Permissions we use</h2>
+    <ul>
+      <li><strong>storage</strong>: save your API key and preferences (language, model choice, etc.) locally.</li>
+      <li><strong>activeTab / scripting / tabs</strong>: read the transcript from the active YouTube tab, and seek the video when you click a timestamp.</li>
+      <li><strong>sidePanel</strong>: display the summary UI in the browser's side panel.</li>
+      <li><strong>Host permission (youtube.com)</strong>: read the video transcript.</li>
+      <li><strong>Host permission (api.anthropic.com)</strong>: call the Claude API using your own key to generate the summary.</li>
+      <li><strong>Host permission (api.gumroad.com)</strong>: verify your license key with Gumroad, only when you enter a key on the options page and click Activate.</li>
+    </ul>
+
+    <h2>Payment &amp; licensing</h2>
+    <p>TubeGist offers 3 free summaries per day. Unlocking unlimited use is a single one-time purchase (no subscription), processed by Gumroad (see <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad's privacy policy</a>). When you activate a license, the key you enter is sent to Gumroad's verification endpoint (<code>api.gumroad.com</code>) to confirm its validity; the result is stored only in your local browser storage and nothing is sent to us.</p>
+
+    <h2>Children's privacy</h2>
+    <p>TubeGist is not directed at children and does not knowingly collect personal data from children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we make material changes to this policy, we will update the "Last updated" date at the top of this page. Please check back periodically.</p>
+
+    <h2>Contact us</h2>
+    <p>Questions about this privacy policy? Reach out at <a href="mailto:joe303262000@hotmail.com">joe303262000@hotmail.com</a></p>
+  </div>
+
+  <footer>
+    TubeGist &middot; Private, login-free YouTube summaries &middot; Bring your own API key
+  </footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-block').forEach(function (el) {
+      el.classList.toggle('active', el.id === 'lang-' + lang);
+    });
+    document.querySelectorAll('.lang-toggle button').forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    try { localStorage.setItem('tubegist-privacy-lang', lang); } catch (e) {}
+  }
+  (function () {
+    try {
+      var saved = localStorage.getItem('tubegist-privacy-lang');
+      if (saved === 'en' || saved === 'zh') { setLang(saved); return; }
+    } catch (e) {}
+    var isZh = /^zh/i.test(navigator.language || '');
+    setLang(isZh ? 'zh' : 'en');
+  })();
+</script>
+</body>
+</html>
